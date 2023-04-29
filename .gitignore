@@ -1,6 +1,5 @@
 node_modules/
 .sass-cache/
-styles/scss/
 *.css.map
 *.sass.map
 *.scss.map
