@@ -6,6 +6,7 @@
 // Custom variables
 
 $mainsite: #00397C;
+$scndsite: #232323;
 
 // Custom styles
 
@@ -59,13 +60,65 @@ header {
     --bs-btn-active-border-color: #{shade-color(#00397C, 20%)};
 }
 
+about {
+    background-color: $scndsite;
+}
+
+.display-4 {
+    font-size: 4.5rem;
+    color: #fff;
+}
+.fw-lighter {
+    color: #fff;
+}
+.rwtop {
+    font-size: 40px;
+    color: $mainsite;
+}
+.rwtext {
+    font-size: 30px;
+    color: $mainsite;
+}
+.bi {
+    color: #5094DB;
+}
+.cont {
+    --bs-btn-font-weight: 600;
+    --bs-btn-bg: white;
+    --bs-btn-border-color:  black;
+    --bs-btn-color: #00397C;
+    --bs-btn-border-radius: 1rem;
+    --bs-btn-border-width: 2px;
+    --bs-btn-hover-bg: #{shade-color(#00397C, 10%)};
+    --bs-btn-hover-border-color: #{shade-color(#00397C, 10%)};
+    --bs-btn-active-bg: #{shade-color(#00397C, 20%)};
+    --bs-btn-active-border-color: #{shade-color(#00397C, 20%)};
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 3rem;
+}
+.navbar-toggler{
+    border: none;
+}
+.contact {
+    color: #fff;
+}
+.fofw { 
+    color: black;
+}
+.arrup {
+    color: #1862b5;
+}
+.dis-4 {
+    font-size: 2.5rem;
+}
 // Media Queries
 
 @include media-breakpoint-down(md) {
     header {
         background-position: left;
     }
-    
+
     .text-box {
         text-align: center;
         width: 330px;
@@ -78,5 +131,47 @@ header {
     .text-box h3 {
         font-size: 18px;
         margin: 20px 0 20px;
+    }
+    .display-4 {
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+    .featurette-divider {
+        border-width: 4px;
+    }
+    .fw-lighter {
+        color: #fff;
+    }
+    .about-text {
+        font-size: 25px;
+    }
+    .bi {
+        width: 50px;
+    }
+    .rwtext {
+        font-size: 20px;
+    }
+    .rwtop {
+        font-size: 25px;
+    }
+    .fofw { 
+        color: black;
+    }
+    .contact {
+        color: #fff;
+        font-size: small;
+    }
+    .cont {
+        font-size: 12px;
+        height: 2.5rem;
+        width: 10rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .colitem {
+        width: 80%;
+    }
+    .logo2 {
+        display: hidden;
     }
 }

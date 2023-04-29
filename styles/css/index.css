@@ -10828,6 +10828,69 @@ header {
   --bs-btn-active-border-color: #002e63;
 }
 
+about {
+  background-color: #232323;
+}
+
+.display-4 {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.fw-lighter {
+  color: #fff;
+}
+
+.rwtop {
+  font-size: 40px;
+  color: #00397C;
+}
+
+.rwtext {
+  font-size: 30px;
+  color: #00397C;
+}
+
+.bi {
+  color: #5094DB;
+}
+
+.cont {
+  --bs-btn-font-weight: 600;
+  --bs-btn-bg: white;
+  --bs-btn-border-color: black;
+  --bs-btn-color: #00397C;
+  --bs-btn-border-radius: 1rem;
+  --bs-btn-border-width: 2px;
+  --bs-btn-hover-bg: #003370;
+  --bs-btn-hover-border-color: #003370;
+  --bs-btn-active-bg: #002e63;
+  --bs-btn-active-border-color: #002e63;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 3rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.contact {
+  color: #fff;
+}
+
+.fofw {
+  color: black;
+}
+
+.arrup {
+  color: #1862b5;
+}
+
+.dis-4 {
+  font-size: 2.5rem;
+}
+
 @media (max-width: 767.98px) {
   header {
     background-position: left;
@@ -10844,6 +10907,48 @@ header {
   .text-box h3, .text-box .h3 {
     font-size: 18px;
     margin: 20px 0 20px;
+  }
+  .display-4 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+  }
+  .featurette-divider {
+    border-width: 4px;
+  }
+  .fw-lighter {
+    color: #fff;
+  }
+  .about-text {
+    font-size: 25px;
+  }
+  .bi {
+    width: 50px;
+  }
+  .rwtext {
+    font-size: 20px;
+  }
+  .rwtop {
+    font-size: 25px;
+  }
+  .fofw {
+    color: black;
+  }
+  .contact {
+    color: #fff;
+    font-size: small;
+  }
+  .cont {
+    font-size: 12px;
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .colitem {
+    width: 80%;
+  }
+  .logo2 {
+    display: hidden;
   }
 }
 
