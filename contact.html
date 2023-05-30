@@ -81,14 +81,16 @@
         var toast = document.getElementById('liveToast');
         
         // Function to display the toast message
-        function displayToast(message) {
+        // Function to display the toast message
+        function displayToast(response) {
             var toastBody = toast.querySelector('.toast-body');
-            toastBody.textContent = message;
+            toastBody.textContent = response.message;
+        
             // Apply appropriate classes based on the response status
             if (response.status === 'success') {
-            toast.classList.add('text-bg-success');
+            toast.classList.add('bg-success', 'text-white');
             } else if (response.status === 'error') {
-            toast.classList.add('text-bg-danger');
+            toast.classList.add('bg-danger', 'text-white');
             }
         
             // Show the toast
