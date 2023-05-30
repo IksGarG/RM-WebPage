@@ -10777,7 +10777,7 @@ html {
 }
 
 body {
-  overflow: overlay;
+  overflow: hidden;
 }
 
 header {

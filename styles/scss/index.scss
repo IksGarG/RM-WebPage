@@ -104,9 +104,9 @@ about {
     --bs-btn-hover-border-color: #{shade-color(#00397C, 10%)};
     --bs-btn-active-bg: #{shade-color(#00397C, 20%)};
     --bs-btn-active-border-color: #{shade-color(#00397C, 20%)};
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 3rem;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    // height: 3rem;
 }
 .navbar-toggler{
     border: none;
@@ -173,11 +173,9 @@ about {
         font-size: small;
     }
     .cont {
-        font-size: 10px;
+        font-size: 12px;
         height: 2.5rem;
         width: 10rem;
-        margin-top: auto;
-        margin-bottom: auto;
     }
     .colitem {
         width: 80%;

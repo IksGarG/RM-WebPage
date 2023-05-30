@@ -10879,9 +10879,6 @@ about {
   --bs-btn-hover-border-color: #003370;
   --bs-btn-active-bg: #002e63;
   --bs-btn-active-border-color: #002e63;
-  margin-top: auto;
-  margin-bottom: auto;
-  height: 3rem;
 }
 
 .navbar-toggler {
@@ -10951,11 +10948,9 @@ about {
     font-size: small;
   }
   .cont {
-    font-size: 10px;
+    font-size: 12px;
     height: 2.5rem;
     width: 10rem;
-    margin-top: auto;
-    margin-bottom: auto;
   }
   .colitem {
     width: 80%;
