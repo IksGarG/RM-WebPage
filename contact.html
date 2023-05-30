@@ -9,6 +9,135 @@
     <title>Real Management</title>
 </head>
 <body>
+    <header class="d-flex flex-column vh-100 w-100">
+        <nav class="navbar navbar-expand-md bg-transparent mt-1">
+            <div class="container-fluid">
+                <a class="navbar-brand col-8 ms-5" href="#">
+                    <img src="images/20rmb.png" alt="RealManagement" width="160">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item me-3 text-end">
+                    <a class="nav-link fw-bold" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item me-3 text-end">
+                    <a class="nav-link fw-bold" href="portafolio.html">Portafolio</a>
+                  </li>
+                    <li class="nav-item me-3 text-end">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Contáctanos</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="mt-2 mt-md-2 mb-1 mb-md-2">
+            <h1 class="text-white text-center">Portafolio</h1>
+            <p class="text-white-50 text-center">Algunos de nuestros clientes</p>
+          </div>
+          <main class="container d-flex mt-md-5 text-white">
+            <div class="row row-cols-2 row-cols-md-3 text-center text-md-start">
+              <div class="col coli-1">
+                <h3 class="display-4">Be Towers</h3>
+                <h2 class="lead text-white-50">232 unidades</h2>
+              </div>
+              <div class="col coli-2">
+                <h3 class="display-4">Cumbres Towers</h3>
+                <h2 class="lead text-white-50">126 unidades</h2>
+              </div>
+              <div class="col coli-3">
+                <h3 class="display-4">Kanali</h3>
+                <h2 class="lead text-white-50">30 unidades</h2>
+              </div>
+              <div class="col coli-4">
+                <h3 class="display-4">Villa Magna</h3>
+                <h2 class="lead text-white-50">380 casas</h2>
+              </div>
+
+              <div class="col coli-5">
+                <h3 class="display-4">Kabeek</h3>
+                <h2 class="lead text-white-50">20 unidades</h2>
+              </div>
+              <div class="col coli-6">
+                <h3 class="display-4">UC69</h3>
+                <h2 class="lead text-white-50">386 casas</h2>
+              </div>
+              <div class="col coli-7">
+                <h3 class="display-4">Riva</h3>
+                <h2 class="lead text-white-50">40 unidades</h2>
+              </div>
+              <div class="col coli-8">
+                <h3 class="display-4">Isla Real</h3>
+                <h2 class="lead text-white-50">26 unidades</h2>
+              </div>
+
+              <div class="col coli-9">
+                <h3 class="display-4">Isla Romántica</h3>
+                <h2 class="lead text-white-50">42 unidades</h2>
+              </div>
+              <div class="col coli-10">
+                <h3 class="display-4">Isla Risueña</h3>
+                <h2 class="lead text-white-50">18 unidades</h2>
+              </div>
+              <div class="col coli-11">
+                <h3 class="display-4">Cancún Plaza</h3>
+                <h2 class="lead text-white-50">246 unidades</h2>
+              </div>
+              <div class="col coli-12">
+                <h3 class="display-4">Kaána</h3>
+                <h2 class="lead text-white-50">22 unidades</h2>
+              </div>
+
+            </div>
+          </main>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      function handleMediaQuery(mediaQuery) {
+        if (mediaQuery.matches) {
+          // Code to execute when media breakpoint is higher than or equal to md
+          console.log('Media breakpoint is higher than or equal to md');
+          ScrollReveal().reveal('.coli-1', { delay: 500 });
+          ScrollReveal().reveal('.coli-2', { delay: 650 });
+          ScrollReveal().reveal('.coli-4', { delay: 650 });
+          ScrollReveal().reveal('.coli-3', { delay: 800 });
+          ScrollReveal().reveal('.coli-5', { delay: 800 });
+          ScrollReveal().reveal('.coli-7', { delay: 800 });
+          ScrollReveal().reveal('.coli-6', { delay: 950 });
+          ScrollReveal().reveal('.coli-8', { delay: 950 });
+          ScrollReveal().reveal('.coli-10', { delay: 950 });
+          ScrollReveal().reveal('.coli-9', { delay: 1100 });
+          ScrollReveal().reveal('.coli-11', { delay: 1100 });
+          ScrollReveal().reveal('.coli-12', { delay: 1100 });
+        } else {
+          // Code to execute when media breakpoint is lower than md
+          console.log('Media breakpoint is lower than md');
+          ScrollReveal().reveal('.coli-1', { delay: 500 });
+          ScrollReveal().reveal('.coli-2', { delay: 650 });
+          ScrollReveal().reveal('.coli-3', { delay: 650 });
+          ScrollReveal().reveal('.coli-4', { delay: 800 });
+          ScrollReveal().reveal('.coli-5', { delay: 800 });
+          ScrollReveal().reveal('.coli-6', { delay: 950 });
+          ScrollReveal().reveal('.coli-7', { delay: 950 });
+          ScrollReveal().reveal('.coli-8', { delay: 1100 });
+          ScrollReveal().reveal('.coli-9', { delay: 1100 });
+          ScrollReveal().reveal('.coli-10', { delay: 1250 });
+          ScrollReveal().reveal('.coli-11', { delay: 1250 });
+          ScrollReveal().reveal('.coli-12', { delay: 1400 });
+        }
+      }
     
+      // Define the media query for md breakpoint
+      var mediaQuery = window.matchMedia('(min-width: 768px)');
+    
+      // Call the function initially to handle the current media breakpoint
+      handleMediaQuery(mediaQuery);
+    
+      // Add event listener to handle changes in media breakpoint
+      mediaQuery.addListener(handleMediaQuery);
+    </script>
 </body>
 </html>
