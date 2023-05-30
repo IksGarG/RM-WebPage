@@ -84,6 +84,12 @@
         function displayToast(message) {
             var toastBody = toast.querySelector('.toast-body');
             toastBody.textContent = message;
+            // Apply appropriate classes based on the response status
+            if (response.status === 'success') {
+            toast.classList.add('text-bg-success');
+            } else if (response.status === 'error') {
+            toast.classList.add('text-bg-danger');
+            }
         
             // Show the toast
             var bootstrapToast = new bootstrap.Toast(toast);
