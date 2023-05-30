@@ -81,17 +81,9 @@
         var toast = document.getElementById('liveToast');
         
         // Function to display the toast message
-        // Function to display the toast message
-        function displayToast(response) {
+        function displayToast(message) {
             var toastBody = toast.querySelector('.toast-body');
-            toastBody.textContent = response.message;
-        
-            // Apply appropriate classes based on the response status
-            if (response.status === 'success') {
-            toast.classList.add('bg-success', 'text-white');
-            } else if (response.status === 'error') {
-            toast.classList.add('bg-danger', 'text-white');
-            }
+            toastBody.textContent = message;
         
             // Show the toast
             var bootstrapToast = new bootstrap.Toast(toast);
