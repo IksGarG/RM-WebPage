@@ -17,11 +17,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $headers = "From: $email\r\n";
   $headers .= "Reply-To: $email\r\n";
 
-  // Send the email
-  if (mail($recipient, $subject, $body, $headers)) {
-    echo "Email sent successfully!";
+   // Send the email
+   if (mail($recipient, $subject, $body, $headers)) {
+    // Return success response
+    $response = array(
+      'status' => 'success',
+      'message' => 'Thank you for your message. We will be in touch soon!'
+    );
   } else {
-    echo "Oops! Something went wrong. Please try again later.";
+    // Return error response
+    $response = array(
+      'status' => 'error',
+      'message' => 'Oops! Something went wrong. Please try again later.'
+    );
   }
+  // Convert the response to JSON format
+  $jsonResponse = json_encode($response);
+
+  // Return the JSON response
+  echo $jsonResponse;
 }
 ?>
