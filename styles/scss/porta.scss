@@ -4,4 +4,57 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss"; // Bootstrap
 @import "../../node_modules/animate.css/animate.min.css"; // Animate.css
 
-// Custom styles
+
+// Variables
+$mainsite: #00397C;
+
+//Custom code here
+html {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+body {
+    overflow: overlay;
+}
+header {
+    background-image: url("../../images/back2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+header {
+    background-color: #232323;
+}
+.nav-link {
+    font-size: larger;
+    color: #fff;
+    &:hover {
+        color: $mainsite;
+    }
+}
+.navbar {
+    --bs-navbar-active-color: #00397C;
+}
+@include media-breakpoint-down(md) {
+    header {
+        background-position: left;
+    }
+    .display-4 {
+        font-size: 25px;
+    }
+    .lead {
+        font-size: 18px;
+    }
+}
