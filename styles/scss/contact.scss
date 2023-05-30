@@ -54,12 +54,12 @@ label {
 }
 
 .form-control {
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.5);
     color: #fff;
     border: 2px solid #00397C;
     border-radius: 1rem;
     &:focus {
-        background-color: #b8b8b8;
+        background-color: whitesmoke;
         color: black;
         border: 2px solid #00397C;
         border-radius: 1rem;
@@ -77,3 +77,12 @@ label {
     --bs-btn-active-bg: #{shade-color(#00397C, 20%)};
     --bs-btn-active-border-color: #{shade-color(#00397C, 20%)};
 }
+.whatsapp-logo {
+    /* Set initial styles */
+    transition: transform 0.3s;
+  }
+  
+  .whatsapp-logo:hover {
+    /* Apply hover effect */
+    transform: scale(1.2);
+  }

@@ -10822,13 +10822,13 @@ label {
 }
 
 .form-control {
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.5);
   color: #fff;
   border: 2px solid #00397C;
   border-radius: 1rem;
 }
 .form-control:focus {
-  background-color: #b8b8b8;
+  background-color: whitesmoke;
   color: black;
   border: 2px solid #00397C;
   border-radius: 1rem;
@@ -10845,6 +10845,16 @@ label {
   --bs-btn-hover-border-color: #003370;
   --bs-btn-active-bg: #002e63;
   --bs-btn-active-border-color: #002e63;
+}
+
+.whatsapp-logo {
+  /* Set initial styles */
+  transition: transform 0.3s;
+}
+
+.whatsapp-logo:hover {
+  /* Apply hover effect */
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=contact.css.map */
